@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="followus.html">Follow</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="buttonclass">
+            <p>Convert numbers between different basses such as binary, decimal, octal, and hexadecimal.</p>
+            <button onclick="openNum()">Number System Conversion</button>
+        </div>
+        <div class="buttonclass">
+            <p>Convert between different units of measurement like length, weight, and temperature.</p>
+            <button onclick="openUnit()">Unit Conversion</button>
+        </div>
+        <div class="buttonclass">
+            <p>Effortlessly compare and calculate real-time exchange rates for currencies worldwide across the globe.</p>
+            <button onclick="openCurrency()">Currency Exchange Rate</button>
+        </div>
+    </div>
+    <script>
+        function openNum() {
+            window.location.href = 'NumberSystem.html';
+        }
+        function openUnit() {
+            window.location.href = 'Unit.html';
+        }
+        function openCurrency() {
+            window.location.href='Currency.html';
+        }
+    </script>
+    
+</body>
+</html>

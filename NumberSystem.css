@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(pexels-johannes-plenio-1103970.jpg);
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .converter-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    backdrop-filter: blur(50px);
+  }
+  
+  h1, label, h2, p {
+    font-weight: none;
+    color: #000;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-right: 10px;
+    display: block;
+  }
+  
+  input, select, button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }

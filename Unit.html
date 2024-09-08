@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+
+    <link rel="stylesheet" href="Unit.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Unit Converter</h1>
+        <h5>-Change Category-</h5>
+        <select id="conversionCategory">
+            <option value="temperature">Temperature</option>
+            <option value="area">Area</option>
+            <option value="weight">Weight</option>
+            <option value="length">Length</option>
+            <option value="time">Time</option>
+        </select>
+
+        <div class="container">
+
+            <div class="conversion" id="temperature">
+                <h2>Temperature</h2>
+                <input type="text" id="temperatureInput" placeholder="Enter value">
+                <select id="fromTemperatureUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+                <span><br>to<br></span>
+                <select id="toTemperatureUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+                <button onclick="convertTemperature()">Convert</button>
+                <p id="temperatureResult"></p>
+            </div>            
+
+             <div class="conversion" id="area">
+                <h2>Area</h2>
+                <input type="text" id="areaInput" placeholder="Enter value">
+                <select id="fromAreaUnit">
+                    <option value="sqMeter">Square Meter</option>
+                    <option value="sqKilometer">Square Kilometer</option>
+                    <option value="sqCentimeter">Square Centimeter</option>
+                    <option value="sqMillimeter">Square Millimeter</option>
+                </select>
+                <span><br>to<br></span>
+                <select id="toAreaUnit">
+                    <option value="sqMeter">Square Meter</option>
+                    <option value="sqKilometer">Square Kilometer</option>
+                    <option value="sqCentimeter">Square Centimeter</option>
+                    <option value="sqMillimeter">Square Millimeter</option>
+                </select>
+                <button onclick="convertArea()">Convert</button>
+                <p id="areaResult"></p>
+            </div>
+            
+            <div class="conversion" id="weight">
+                <h2>Weight</h2>
+                <input type="text" id="weightInput" placeholder="Enter value">
+                <select id="fromWeightUnit">
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                    <option value="milligram">Milligram</option>
+                </select>
+                <span><br>to<br></span>
+                <select id="toWeightUnit">
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                    <option value="milligram">Milligram</option>
+                </select>
+                <button onclick="convertWeight()">Convert</button>
+                <p id="weightResult"></p>
+            </div>            
+            
+            <div class="conversion" id="length">
+                <h2>Length</h2>
+                <input type="text" id="lengthInput" placeholder="Enter value">
+                <select id="fromLengthUnit">
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="millimeter">Millimeter</option>
+                </select>
+                <span><br>to<br></span>
+                <select id="toLengthUnit">
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="millimeter">Millimeter</option>
+                    <option value="micrometer">Micrometer</option>
+                </select>
+                <button onclick="convertLength()">Convert</button>
+                <p id="lengthResult"></p>
+            </div>
+            
+            <div class="conversion" id="time">
+                <h2>Time</h2>
+                <input type="text" id="timeInput" placeholder="Enter value">
+                <select id="fromTimeUnit">
+                    <option value="second">Second</option>
+                    <option value="millisecond">Millisecond</option>
+                    <option value="minute">Minute</option>
+                    <option value="hour">Hour</option>
+                </select>
+                <span><br>to<br></span>
+                <select id="toTimeUnit">
+                    <option value="second">Second</option>
+                    <option value="millisecond">Millisecond</option>
+                    <option value="minute">Minute</option>
+                </select>
+                <button onclick="convertTime()">Convert</button>
+                <p id="timeResult"></p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="Unit.js"></script>
+</body>
+</html>
